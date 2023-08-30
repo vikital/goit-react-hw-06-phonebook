@@ -30,7 +30,7 @@ function ContactForm() {
       contact => contact.name.toLowerCase() === name.toLowerCase()
     );
     if (existingContact) {
-      Notiflix.Report.warning(`Contact with name ${name} already exists!`);
+      Notiflix.Notify.info(`${name} is already in contacts`);
       return;
     }
 

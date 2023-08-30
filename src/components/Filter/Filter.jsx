@@ -1,9 +1,9 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { getContacts, getFilter } from 'redux/selectors';
 import { setContactsFilter } from 'redux/filterSlice';
-import { Input } from 'components/ContactForm/ContactForm.styled';
+import { Input } from './Filter.styled';
 
-function Filter({ filter, setContactFilter }) {
+function Filter() {
   const dispatch = useDispatch();
 
   const handleFilterChange = event => {
